@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="@color/black" >
+
+    <GridLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="35dp"
+        android:columnCount="2" >
+
+        <LinearLayout
+            android:layout_column="0"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:background="@color/black" >
+
+            <LinearLayout android:id="@+id/rect1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:background="@color/red" />
+
+            <LinearLayout android:id="@+id/rect2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="0.5"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:background="@color/white" />
+        </LinearLayout>
+ 
+        <LinearLayout
+            android:layout_column="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_horizontal"
+            android:orientation="vertical"
+            android:background="@color/black" >
+
+            <LinearLayout android:id="@+id/rect3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="0.35"
+                android:orientation="horizontal"
+                android:background="@color/green" />
+
+            <LinearLayout android:id="@+id/rect4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="0.45"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:background="@color/blue" />
+
+            <LinearLayout android:id="@+id/rect5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="0.3"
+                android:orientation="horizontal"
+                android:background="@color/yellow" />
+        </LinearLayout>
+    </GridLayout>
+
+    <SeekBar
+        android:id="@+id/color_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:max="100" />
+</RelativeLayout>

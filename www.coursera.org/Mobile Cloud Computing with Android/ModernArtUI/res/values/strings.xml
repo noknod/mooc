@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">ModernArtGui</string> 
+  <string name="menu_more_info">More information</string> 
+  <string name="dialog_cancel">Not now</string> 
+  <string name="dialog_ok">Visit MOMA</string> 
+  <string name="dialog_message">Learn more and go to MOMA website</string> 
+  <string name="URL">http://www.moma.com</string>
+
+</resources>
